@@ -1,0 +1,108 @@
+* {
+    padding: 5px;
+    margin: 5px;
+    /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+    font-style: normal; 
+  
+}
+
+header {
+    font-family: "Playfair Display", serif;
+    display: flex;
+    align-items: center;
+}
+body {
+    font-family: "Oswald", sans-serif;
+    background: #a8dadc;
+    color:  #1d3557;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px; 
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 30px;
+    font-family: "Golos Text", sans-serif;
+  }
+  
+
+#logo {
+    width: 18%;
+    display: block;
+}
+
+nav a {
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+  }
+
+nav a:hover {
+    border-color: #1d3557;
+}
+
+#navselected {
+    color: #e63946;
+}
+
+a.cta {
+    font-family: "Oswald", sans-serif;
+    background-color: none;
+    border: 1px solid;
+    border-color: #e63946;
+    border-radius: 15px;
+    padding: 8px 10px;
+    color: #e63946;
+    font-weight: bold;
+
+}
+
+footer {
+    font-family: "Playfair Display", serif;
+    border-top: 1px solid rgba(245,245,247,.12);
+    padding: 18px 16px;
+    text-align: center;
+    color: #1d3557;;
+    border-color: #1d3557;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: fit-content;
+}
+tr:nth-child(even) {
+    background-color: #457b9d;
+    color: #a8dadc
+}  
+
+form * {
+    margin: auto;
+    text-align: left;
+}
+
+.museumImage { 
+    border: 20px solid white;
+    display: block;           
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  
+
+  
