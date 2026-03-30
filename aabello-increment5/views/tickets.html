@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta name="author" content="Your name">
+        <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+        <meta name="description" content="MonoMuse website redesign project">
+        <title>Buy Tickets</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <script src="../static/script.js" defer></script>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+
+    <body onload = "addYear()">
+        <div class = 'container'>
+            <header class = 'header'>
+                <img id="logo" src="../images/museologo.jpeg" alt="MAIT Museum Logo">  
+            </header>
+            <nav class = 'nav_bar'>
+                <a href = "../index.html">Home</a>
+                <a href = "explore.html">Explore</a>
+                <a href = "exhibitions.html">Exhibitions</a>
+                <a href = "tickets.html">Tickets</a>
+                <!-- Hamburger Icon -->  
+                <a href = "javascript:void(0);" class = "icon" onclick = "toggleMenu()">☰</a>
+            </nav>
+            <main class = "main">
+                <h2 id="ticketScheduleHeader"> Ticket Options Below </h2>
+                <table id = ticketOptions>
+                    <tr>
+                        <th> Ticket Type </th>
+                        <th> Description </th>
+                        <th> Price </th>
+                    </tr>
+                    <tr>
+                        <td> Adult</td>
+                        <td> General Admission for ages 18 and over. Under 18 is free of charge. </td>
+                        <td> $18</td>
+                    </tr>
+                    <tr>
+                        <td> Student</td>
+                        <td> Student ID required</td>
+                        <td> $10</td>
+                    </tr>
+                    <tr>
+                        <td> Member</td>
+                        <td> Member ID required</td>
+                        <td> $15</td>
+                    </tr>
+                </table>
+
+                <br><br>
+                <h2 id="ticketScheduleHeader"> Ticket Schedule Below </h2>
+
+                <table id="ticketSchedule">
+                    <th> Date</th>
+                    <th> Availability</th>
+                    <tr>
+                        <td> 3/19</td>
+                        <td><button class = "buyNow">Buy Now!</button></td>
+                    </tr>
+                    <tr>
+                        <td> 3/20</td>
+                        <td><button class = "buyNow">Buy Now!</button></td>
+                    </tr>
+                    <tr>
+                        <td> 3/21</td>
+                        <td><button class = "buyNow">Buy Now!</button></td>
+                    </tr>
+                    <tr>
+                        <td> 3/12</td>
+                        <td><button class = "buyNow">Buy Now!</button></td>
+                    </tr>
+                    <tr>
+                        <td> 3/23</td>
+                        <td>Musuem Closed</td>
+                    </tr>
+                    <tr>
+                        <td> 3/24</td>
+                        <td>Musuem Closed</td>
+                    </tr>
+                    <tr>
+                        <td> 3/25</td>
+                        <td>Musuem Closed</td>
+                    </tr>
+                    <tr>
+                        <td> 3/26</td>
+                        <td><button class = "buyNow">Buy Now!</button></td>
+                    </tr>
+                    <tr>
+                        <td> 3/27</td>
+                        <td><button class = "buyNow">Buy Now!</button></td>
+                    </tr>
+                    <tr>
+                        <td> 3/28</td>
+                        <td><button class = "buyNow">Buy Now!</button></td>
+                    </tr>
+                    <tr>
+                        <td> 3/29</td>
+                        <td><button class = "buyNow">Buy Now!</button></td>
+                    </tr>
+                    <tr>
+                        <td> 3/30</td>
+                        <td>Musuem Closed</td>
+                    </tr>
+                    <tr>
+                        <td> 3/31</td>
+                        <td>Musuem Closed</td>
+                    </tr>
+
+                </table>
+
+
+                <form id = 'checkoutForm'>
+                    <p>Selected Date: <span id="selectedDate">None</span></p>
+                    <label for="name"> Name (required):</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+                    <label for="email">Email: (required)</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="ticketQ">Ticket Quantity: (required)</label><br>
+                    <input type="number" id="ticketQ" name="ticketQ" min = 1 required><br><br>
+                    <input type="submit" id = "submitTicket" value="Submit">
+
+                </form>
+
+                
+
+
+
+                <br>
+            </main>
+            <figure class = 'main_figure'></figure>
+            <footer class = 'footer'> &#169 <p id = 'copyYear'> </p> MAIT. All rights reserved. </footer>
+        </div>
+    </body>
+</html>
