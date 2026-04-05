@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <meta name="author" content="Your name">
+        <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+        <meta name="description" content="MonoMuse website redesign project">
+        <title>Explore</title>
+        <link rel="stylesheet" href="../static/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <script src="../static/script.js" defer></script>
+        <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+
+    <body onload = "addYear()">
+        <div class = 'container'>
+            <header class = 'header'>
+                <img id="logo" src="../images/museoLogo.jpeg" alt="MAIT Museum Logo">
+            </header>
+            <nav class = 'nav_bar'>
+                <a href = "../index.html">Home</a>
+                <a href = "explore.html">Explore</a>
+                <a href = "exhibitions.html">Exhibitions</a>
+                <a href = "tickets.html">Tickets</a>
+                <!-- Hamburger Icon -->  
+                <a href = "javascript:void(0);" class = "icon" onclick = "toggleMenu()">☰</a>
+            </nav> 
+            
+            
+            <main class = "main">
+                <img src="../images/museo.jpeg" class = 'museumImage' alt = "Musuem Picture" width="500" height ="500"> 
+                <h3> Mission Statement</h3>
+                <p> MAIT is dedicated to exploring the evolving relationship between art, technology, and society. Our mission is to inspire curiosity and creativity bu showcasing innovative exhibitions that highlight how digital tools, emerging technologies, and human imagination shape the future of artistic expression.</p>
+                <h3> Milestones </h3>
+                <ul>
+                    <li> 2023: Broke Ground on the new building. </li>
+                    <li> 2024: Opened officially to the public. </li>
+                    <li> 2025: Hosted our first gala to fundraise for our new garden grounds.</li>
+                    <li> 2026: Opened our garden grounds and our new exhibit. </li>
+                </ul>
+
+                <div class="slideshow-container">
+                    <!-- Slideshow container -->
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="../images/museum_gardens.jpg" style="width:100%" alt = "Musuem Garden Image">
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="../images/museum_cafe.jpg" style="width:100%" alt = "Musuem Cafe Image">
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="../images/museum_interior.jpg" style="width:100%" alt = "Musuem Interior Image">
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </main>
+            <figure class = 'main_figure'> </figure>
+    
+            <footer class = 'footer'> &#169 <p id = 'copyYear'> </p> MAIT. All rights reserved. </footer>
+        </div>
+    </body>
+</html>
