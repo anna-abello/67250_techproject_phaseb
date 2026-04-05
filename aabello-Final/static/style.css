@@ -1,0 +1,319 @@
+* {
+    padding: 5px;
+    margin: 5px;
+    /* font-family: Roboto, Helvetica, Arial, sans-serif; */
+    font-optical-sizing: auto;
+    font-weight: 100;
+    line-height: 1.5;
+    font-style: normal; 
+  
+}
+
+.container {
+    display: grid; /* Turns this div into a CSS Grid layout */
+    grid-template-areas:   /* Defines the layout structure */
+      'header header'
+      'nav_bar nav_bar'
+      'main main-img'
+      'footer footer';
+}
+
+.header {
+    grid-area: header; 
+}
+
+.nav_bar {
+    grid-area: nav_bar; 
+    display: flex; /* Uses Flexbox for internal layout */
+    justify-content: right;   /* Right aligns the content */
+    gap: 10px;
+}
+
+.nav_bar a:not(.icon){
+    display: none;
+}
+.nav_bar .icon {
+    display: block;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.nav_bar.responsive {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav_bar.responsive a:not(.icon){
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.nav_bar.responsive .icon{
+    display: block;
+    align-self: flex-end;
+}
+
+ .main {
+   grid-area: main; 
+ }
+ .main_img {
+    grid-area: main-img; 
+ }
+ .footer {
+    grid-area: footer;
+ }
+ 
+  
+
+header {
+    font-family: "Playfair Display", serif;
+    display: flex;
+    align-items: center;
+}
+body {
+    font-family: "Oswald", sans-serif;
+    background: #a8dadc;
+    color:  #1d3557;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 24px; 
+}
+
+ul {
+    list-style-position: inside;
+    padding-left: 30px;
+    font-family: "Golos Text", sans-serif;
+  }
+  
+
+#logo {
+    width: 18%;
+    display: block;
+}
+
+nav a {
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    color: #1d3557;
+    font-weight: 400;
+    padding: 8px 10px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+  }
+
+.nav_bar a:hover {
+    border-color: #1d3557;
+}
+.nav_bar a.active {
+    color: #e63946;
+}
+
+a.cta {
+    font-family: "Oswald", sans-serif;
+    background-color: none;
+    border: 1px solid;
+    border-color: #e63946;
+    border-radius: 15px;
+    padding: 8px 10px;
+    color: #e63946;
+    font-weight: bold;
+
+}
+
+footer {
+    font-family: "Playfair Display", serif;
+    border-top: 1px solid rgba(245,245,247,.12);
+    padding: 18px 16px;
+    text-align: center;
+    color: #1d3557;;
+    border-color: #1d3557;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: fit-content;
+}
+tr:nth-child(even) {
+    background-color: #457b9d;
+    color: #a8dadc
+}  
+
+form * {
+    margin: auto;
+    text-align: left;
+}
+
+.museumImage { 
+    border: 20px solid white;
+    display: block;           
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#longIntro {
+    display: none;
+}
+
+#readLess {
+    display: none;
+}
+
+#checkoutForm {
+    display: none;
+}
+
+#ticketOptions {
+    column-count: 4;
+    column-gap: 20px;
+
+}
+
+table {
+    width: 100%;
+    break-inside: avoid;
+}
+
+#ticketScheduleHeader {
+    font-weight: bold;
+    text-align: center;
+
+}
+
+button {
+    background-color: white;
+    border-width: 8px;
+    border-radius: 20px;
+    border-color:  #1d3557;
+    font-family: "Oswald", sans-serif;
+
+}
+
+@media only screen and (max-width:650px) {
+    .grid-container {
+    display: grid;
+    grid-template-areas:
+        'header'
+        'nav_bar'
+        'main_img'
+        'main'
+        'footer';
+    }
+
+    .nav-links a {
+        display: none;
+    }
+
+    .icon {
+        display: block;
+    }
+
+}
+
+.icon {
+    display: none;
+}
+
+#museumVideo {
+    width: 100%; 
+    display: block;
+    margin: 8px auto;
+    aspect-ratio: 16/9;
+    border: 0;
+}
+
+.content-card{
+    flex: 1 1 300px;
+}
+#map {
+    height: 350px;
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
